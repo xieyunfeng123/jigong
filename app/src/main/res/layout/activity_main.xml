@@ -1,13 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.ityun.jigong.MainActivity">
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/activity_home_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_above="@+id/home_bottom"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:id="@+id/home_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+       >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
 
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/home_phoneBook"
+                style="@style/home_message"
+                android:layout_marginTop="5dp"
+                android:drawableTop="@drawable/home_chat"
+                android:text="工友"
+                android:textSize="10sp"/>
 
+            <RadioButton
+                android:id="@+id/home_me"
+                style="@style/home_message"
+                android:layout_marginTop="5dp"
+                android:drawableTop="@drawable/home_me"
+                android:text="统计"
+                android:textSize="10sp"/>
+        </RadioGroup>
+    </RelativeLayout>
 
-
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
