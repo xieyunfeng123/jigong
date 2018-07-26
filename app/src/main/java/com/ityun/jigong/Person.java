@@ -1,5 +1,7 @@
 package com.ityun.jigong;
 
+import java.util.List;
+
 import cn.bmob.v3.BmobObject;
 
 /**
@@ -11,6 +13,17 @@ public class Person extends BmobObject {
     private String name;
 
     private String pinyin;
+
+    private List<DataBind> dataBindList;
+
+
+    public List<DataBind> getDataBindList() {
+        return dataBindList;
+    }
+
+    public void setDataBindList(List<DataBind> dataBindList) {
+        this.dataBindList = dataBindList;
+    }
 
     public String getName() {
         return name;

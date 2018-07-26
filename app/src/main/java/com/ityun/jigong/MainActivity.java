@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.RadioButton;
 
+import java.util.Date;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -71,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    @OnClick({ R.id.home_phoneBook, R.id.home_me})
+    @OnClick({R.id.home_phoneBook, R.id.home_me})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.home_phoneBook:

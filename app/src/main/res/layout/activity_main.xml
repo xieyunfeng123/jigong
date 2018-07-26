@@ -13,9 +13,11 @@
         />
 
     <View
+        android:background="@color/alertdialog_line"
         android:layout_width="match_parent"
         android:layout_height="1dp"/>
     <RelativeLayout
+        android:background="@color/white"
         android:id="@+id/home_bottom"
         android:layout_width="match_parent"
         android:layout_height="55dp"
